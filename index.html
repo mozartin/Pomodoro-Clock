@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Pomodoro Clock</title>
+   <link rel="stylesheet" href="./css/style.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+</head>
+
+<body>
+   <div class="section">
+      <h1>Pomodoro Clock</h1>
+      <h4 id="actionHeader"></h4>
+      <div class="clockBody">
+         <div>
+            <h2 id="timer"></h2><br>
+            <iconify-icon id="playPauseIcon" icon="material-symbols:play-circle" style="color: #6F7239;"
+               width="50"></iconify-icon>
+            <div id="filled">
+
+            </div>
+         </div>
+      </div>
+      <div class="settings">
+         <div id="break">
+            <p>BREAK LENGTH</p>
+            <div>
+               <div id="breakMin">-</div>
+               <div id="breakNum">1</div>
+               <div id="breakPlus">+</div>
+            </div>
+         </div>
+         <div id="work">
+            <p>SESSION LENGTH</p>
+            <div>
+               <div id="workMin">-</div>
+               <div id="workNum">1</div>
+               <div id="workPlus">+</div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <script src="./js/script.js"></script>
+   <script src="https://code.iconify.design/iconify-icon/1.0.3/iconify-icon.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Space Mono", monospace;
+}
+
+body {
+  background-color: #2e3034;
+  color: #dfe27c;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+.section {
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 5%;
+}
+
+.clockBody {
+  width: 300px;
+  height: 300px;
+  background: #e7e8e3;
+  background-image: linear-gradient(to top, #dfe27c 20%, #e7e8e3 80%);
+  position: relative;
+  border: 5px solid #6f7239;
+  margin: 50px auto;
+  border-radius: 100%;
+}
+.clockBody:after {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  background: #dfe27c;
+  z-index: -1;
+  border-radius: 100%;
+}
+
+#timer {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 100;
+  color: #2e3034;
+  position: absolute;
+  top: 30%;
+  left: 90px;
+  z-index: 2;
+}
+
+iconify-icon {
+  position: absolute;
+  top: 50%;
+  left: 125px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+#exampleIcon {
+  position: initial;
+  width: 30px;
+  height: 30px;
+  color: #dfe27c;
+}
+
+#introParagraph {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  font-weight: 100;
+  font-size: 20px;
+}
+
+.clockBody > div {
+  height: 100%;
+  border-radius: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+#filled {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.settings {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  gap: 35px;
+  margin-bottom: 20px;
+}
+
+.settings > div > div {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  border: 2px solid #a2b6b5;
+}
+
+.settings p {
+  font-size: 20px;
+}
+
+#breakMin,
+#breakPlus,
+#workMin,
+#workPlus {
+  cursor: pointer;
+}
