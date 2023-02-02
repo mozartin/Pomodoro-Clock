@@ -91,6 +91,7 @@ iconify-icon {
   left: 0;
   width: 100%;
   z-index: 1;
+  transition: 1s;
 }
 
 .settings {
